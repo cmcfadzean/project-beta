@@ -1,0 +1,18 @@
+<h3>
+  {{!--You are currently logged as: {{session.data.authenticated.profile.email}}--}}
+  {{!--<img src="{{session.data.authenticated.profile.picture}}" width="50" height="50">--}}
+</h3>
+<h3>
+  {{!--{{#if session.data.authenticated.profile.impersonated}}--}}
+    {{!--Impersonated by: {{session.data.authenticated.profile.impersonator.email}}--}}
+  {{!--{{/if}}--}}
+</h3>
+<div>
+  {{!--Token expires {{moment-calendar expiresIn}} {{moment-from-now expiresIn}}--}}
+</div>
+<a href="#" {{action "logout"}}>
+    Log Out
+</a>
+<br/>
+<h2>You are logged in!</h2>
+<p>Check local storage to see your <code>access_token</code> and <code>id_token</code>.</p>
