@@ -55,5 +55,12 @@ module.exports = function (environment) {
     audience: AUTH_CONFIG.apiUrl
   }
 
+  contentful: {
+    space: 'ynuxkx21oqsg',
+    accessToken: 'b6d7bd30d147463ce276d71568fdd397ecd433bf910b4ae5494c5aa397f83845',
+    previewAccessToken: '546bd49c719f46a7597a49d5418cff5842d04a426bc54c9997111b6501d79083',
+    usePreviewApi: false
+  }
+
   return ENV;
 };
